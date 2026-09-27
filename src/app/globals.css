@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap");
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  font-family: "Vazirmatn", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+body {
+  background:
+    radial-gradient(1100px 600px at 85% -10%, rgba(56, 189, 248, 0.12), transparent 60%),
+    radial-gradient(900px 500px at 5% 0%, rgba(168, 85, 247, 0.14), transparent 55%),
+    #060a14;
+  color: #e2e8f5;
+  min-height: 100vh;
+}
+
+.card {
+  background: linear-gradient(180deg, rgba(19, 26, 44, 0.9), rgba(11, 16, 30, 0.9));
+  border: 1px solid rgba(51, 65, 92, 0.7);
+  border-radius: 18px;
+  box-shadow: 0 18px 40px -28px rgba(0, 0, 0, 0.9);
+}
+
+.soft {
+  background: rgba(15, 22, 39, 0.7);
+  border: 1px solid rgba(45, 58, 85, 0.7);
+  border-radius: 14px;
+}
+
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+.field {
+  width: 100%;
+  background: rgba(9, 13, 25, 0.85);
+  border: 1px solid rgba(55, 70, 100, 0.8);
+  border-radius: 12px;
+  padding: 0.55rem 0.75rem;
+  font-size: 0.875rem;
+  color: #e6ebf7;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.field:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.15);
+}
+
+.field option {
+  background: #0b1220;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  border-radius: 12px;
+  padding: 0.55rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #22d3ee, #3b82f6);
+  color: #04121f;
+}
+
+.btn-primary:hover {
+  filter: brightness(1.08);
+}
+
+.btn-ghost {
+  background: rgba(30, 41, 64, 0.65);
+  border-color: rgba(71, 88, 122, 0.7);
+  color: #cbd5f5;
+}
+
+.btn-ghost:hover {
+  background: rgba(43, 58, 88, 0.8);
+}
+
+.btn-danger {
+  background: rgba(127, 29, 29, 0.55);
+  border-color: rgba(220, 38, 38, 0.5);
+  color: #fecaca;
+}
+
+.btn-danger:hover {
+  background: rgba(153, 27, 27, 0.7);
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(10, 15, 26, 0.6);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(71, 90, 124, 0.8);
+  border-radius: 999px;
+}
+
+table.jrnl th {
+  font-weight: 600;
+  color: #93a4c8;
+  font-size: 0.75rem;
+  padding: 0.6rem 0.7rem;
+  text-align: right;
+  white-space: nowrap;
+  border-bottom: 1px solid rgba(51, 65, 92, 0.7);
+  background: rgba(10, 15, 28, 0.7);
+}
+
+table.jrnl td {
+  padding: 0.55rem 0.7rem;
+  font-size: 0.8rem;
+  border-bottom: 1px solid rgba(31, 41, 61, 0.6);
+  white-space: nowrap;
+}
